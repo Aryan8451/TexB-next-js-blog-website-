@@ -1,0 +1,45 @@
+.container {
+  margin-top: 50px;
+}
+.title {
+  color: var(--softTextColor);
+  margin-bottom: 30px;
+}
+.write {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.input {
+  scrollbar-width: none;
+  padding: 20px;
+  scrollbar-color: transparent;
+  resize: none;
+  width: 100%;
+}
+.input::-webkit-scrollbar {
+  width: 12px; 
+}
+
+.input::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+}
+.button{
+    padding: 16px 20px;
+    background-color: teal;
+    color: white;
+    font-size: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.comments{
+    margin-top:50px ;
+}
+.comment{
+    margin-bottom: 50px;
+}
+.desc{
+    margin-top: 20px;
+}

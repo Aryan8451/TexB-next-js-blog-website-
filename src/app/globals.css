@@ -1,0 +1,58 @@
+:root{
+    --bg:white;
+    --textColor:black;
+    --softBg:#f0f0f0;
+    --softTextColor:#626262
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.dark{
+    --bg:#151f36;
+    --textColor:#ddd;
+    --softBg:#1f273a;
+    --softTextColor:#a6a6a6
+}
+.light{
+    --bg:beige;
+    --textColor:black;
+    --softBg:#f0f0f0;
+    --softTextColor:#626262
+}
+.container{
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--textColor);
+   
+}
+.wrapper{
+    max-width: 1536px;
+    margin-left: 7%;
+    margin-right:7% ;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+@media screen and (max-width:600px) {
+    .wrapper{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.ql-container{
+    font-size: 28px   !important;
+  
+}
+.quill> .ql-container> .ql-editor.ql-blank::before{
+color: #b3b3b1;
+}

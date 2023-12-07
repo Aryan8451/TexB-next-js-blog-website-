@@ -1,0 +1,88 @@
+.container {
+  margin-top: 30px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.titleText {
+  font-size: 60px;
+  position: relative;
+  color: var(--textColor);
+  font-weight: bold;
+  letter-spacing: 2px;
+  overflow: hidden;
+  border-right: 2px solid var(--textColor);
+  white-space: nowrap;
+  animation: typewriter 4s 1s 1 normal both, blinkTextCursor 500ms infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: var(--textColor);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+.post {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.imgContainer {
+  flex: 1;
+  height: 300px;
+  position: relative;
+}
+.image {
+  object-fit: cover;
+}
+.textContainer {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.postTitle {
+  font-size: 40px;
+}
+.postDesc {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--softTextColor);
+}
+.button {
+  padding: 16px 20px;
+  border:  1px solid #bababa;
+  border-radius: 5px;
+  width: max-content;
+
+}
+@media screen and (max-width: 900px) {
+  .titleText {
+    font-size: 30px;
+  }
+  .imgContainer{
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .titleText {
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
+}
